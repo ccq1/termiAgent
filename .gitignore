@@ -1,0 +1,6 @@
+.venv
+dist
+src/__pycache__
+
+src/termiagent.egg-info
+.env

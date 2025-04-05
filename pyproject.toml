@@ -1,0 +1,14 @@
+[project]
+name = "termiagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dotenv>=0.9.9",
+    "openai>=1.70.0",
+    "rich>=14.0.0",
+]
+
+[project.scripts]
+termiagent = "app:main"
