@@ -2,13 +2,11 @@ from abc import ABC, abstractmethod
 from typing import List, Dict, Any
 from src.llm import LLM
 from pydantic import BaseModel, Field
-class BaseAgent(ABC, BaseModel):
-    """
-    BaseAgent 接口定义了一个基础 AI Agent 的行为规范。
-    包含 LLM（大脑）、memory（记忆）和 actions（工具/行为）。
-    """
 
-    @abstractmethod
+
+
+class BaseAgent(ABC, BaseModel):
+    
     def __init__(self, llm: Any, memory: Dict[str, Any]):
         """
         初始化 BaseAgent。
